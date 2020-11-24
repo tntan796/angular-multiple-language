@@ -9,11 +9,17 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "vi": "src/i18n/mesages.vi.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/i18n-angular-demo",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -29,6 +35,9 @@
             "scripts": []
           },
           "configurations": {
+            "vi": {
+                "localize": ["vi"]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -67,6 +76,9 @@
           "configurations": {
             "production": {
               "browserTarget": "i18n-angular-demo:build:production"
+            },
+            "vi": {
+              "browserTarget": "i18n-angular-demo:build:vi"
             }
           }
         },
@@ -119,6 +131,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "i18n-angular-demo"
+    }
+  },
+  "defaultProject": "i18n-angular-demo",
+  "cli": {
+    "analytics": false
+  }
 }

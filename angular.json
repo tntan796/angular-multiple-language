@@ -12,7 +12,7 @@
       "i18n": {
         "sourceLocale": "en-US",
         "locales": {
-          "vi": "src/i18n/mesages.vi.xlf"
+          "vi": "src/i18n/messages.vi.xlf"
         }
       },
       "architect": {

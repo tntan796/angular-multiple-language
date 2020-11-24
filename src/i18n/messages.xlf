@@ -20,6 +20,27 @@
         <note priority="1" from="description">Friendly welcoming mesage</note>
         <note priority="1" from="meaning">sub header</note>
       </trans-unit>
+      <trans-unit id="323af13292ecc714ab3848b9dff48f923893be32" datatype="html">
+        <source>Portfolio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fbc937c0faaa4c5478f73f682d3224bb91013e80" datatype="html">
+        <source>/en-Us/portfolio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="af2225e2032eb09a617bfb61b6804177c5d96040" datatype="html">
+        <source>My portfolio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

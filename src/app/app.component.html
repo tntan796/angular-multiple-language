@@ -10,3 +10,11 @@
     =2 {{{tasksCount}} tasks}
 }
 </p>
+
+<br/>
+<select name="gender" [(ngModel)]="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+</select>
+<span i18n>The author is {gender, select, male {male} female {female} other {other}}</span>

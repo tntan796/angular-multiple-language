@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="8f8c1e44db621d9a326a97396e69787284671553" datatype="html">
         <source>Hello world!</source>
-        <target>Xin chào thế giới!</target>
+        <target>Chào thế giới!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">1</context>
@@ -12,9 +12,9 @@
         <note priority="1" from="description">Friendly welcoming mesage</note>
         <note priority="1" from="meaning">main header</note>
       </trans-unit>
-       <trans-unit id="9f063676c10ebe6378ba1477f7c7a2242fd605d4" datatype="html">
+      <trans-unit id="9f063676c10ebe6378ba1477f7c7a2242fd605d4" datatype="html">
         <source>Sub Hello world 2!</source>
-        <target>Xin chào thế giới 2!</target>
+        <target>Chào thế giới 2!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">3</context>
@@ -24,21 +24,23 @@
       </trans-unit>
       <trans-unit id="323af13292ecc714ab3848b9dff48f923893be32" datatype="html">
         <source>Portfolio</source>
-        <target>Test</target>
+        <target>Trang chủ</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="fbc937c0faaa4c5478f73f682d3224bb91013e80" datatype="html">
-        <source>/vi/link</source>
+        <source>/en-Us/portfolio</source>
+        <target>/vi/portfolio</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="af2225e2032eb09a617bfb61b6804177c5d96040" datatype="html">
-        <source>Tiêu đều</source>
+        <source>My portfolio</source>
+        <target>Trang của tôi</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">5</context>
@@ -53,10 +55,27 @@
         </context-group>
       </trans-unit>
       <trans-unit id="b71f113d05b1ac83a5ddb61cd6db8b7e0c565615" datatype="html">
-        <source>{VAR_PLURAL, plural, =0 {Không có task} =1 {<x id="INTERPOLATION" equiv-text="{{tasksCount}}"/> Có một task} =2 {<x id="INTERPOLATION" equiv-text="{{tasksCount}}"/> Có nhiều task} }</source>
+        <source>{VAR_PLURAL, plural, =0 {no tasks} =1 {<x id="INTERPOLATION" equiv-text="{{tasksCount}}"/> tasks} =2 {<x id="INTERPOLATION" equiv-text="{{tasksCount}}"/> tasks} }</source>
+        <target>{VAR_PLURAL, plural, =0 {không có task nào} =1 {<x id="INTERPOLATION" equiv-text="{{tasksCount}}"/> có 1 task} =2 {<x id="INTERPOLATION" equiv-text="{{tasksCount}}"/> có nhiều task} }</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="f99f34ac9bd4606345071bd813858dec29f3b7d1" datatype="html">
+        <source>The author is <x id="ICU" equiv-text="{gender, select, male {...} female {...} other {...}}"/></source>
+        <target>Tác giả là <x id="ICU" equiv-text="{gender, select, male {...} female {...} other {...}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eff74b75ab7364b6fa888f1cbfae901aaaf02295" datatype="html">
+        <source>{VAR_SELECT, select, male {male} female {female} other {other} }</source>
+        <target>{VAR_SELECT, select, male {Đàn ông} female {Đàn bà} other {Khác} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
     </body>
